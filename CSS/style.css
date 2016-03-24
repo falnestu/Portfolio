@@ -1,2 +1,45 @@
-body {
+body { 
+	font-family: 'Open Sans', sans-serif;
+ }
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.unstyled-list {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+/*******************************
+	SIDE BAR
+********************************/
+.side-menu {
+	width: 100px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	background: #EAEAEA;
+}
+
+.main-menu {
+
+}
+.main-menu ul{
+	
+}
+.social-menu {
+
+}
+/*******************************
+	MAIN CONTENT
+********************************/
+.main-content {
+	padding-left: 100px;
+}
+
+.section{
+	background: #333;
+	color: #fff;
 }
