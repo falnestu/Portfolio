@@ -1,10 +1,6 @@
-body { 
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
- }
+body { 	font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
-}
+h1,h2,h3,h4,h5,h6 {	font-family: 'Raleway', Helvetica, Arial, sans-serif; }
 
 /*******************************
 	HELPERS
@@ -15,6 +11,8 @@ h1,h2,h3,h4,h5,h6 {
 	padding:0;
 	margin:0;
 }
+
+.text-center { text-align: center; }
 
 /*******************************
 	SIDE BAR
@@ -35,7 +33,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .logo {
 	display: block;
-	text-align: center;
 	position: relative;
 	top:30px;
 }
@@ -51,24 +48,38 @@ h1,h2,h3,h4,h5,h6 {
 	flex-direction: row-reverse;
 }
 
-.main-menu ul li{
-	margin: 0 10px;
-}
+.main-menu ul li{ margin: 0 10px; }
 
 .social-menu {
 	position:absolute;
 	bottom: 30px;
-	text-align: center;
 	width: 100%;
 }
 /*******************************
 	MAIN CONTENT
 ********************************/
-.main-content {
-	padding-left: 100px;
-}
+.main-content {	padding-left: 100px; }
 
 .section{
 	background: #333;
 	color: #fff;
+}
+
+#section-home {
+	background-image: linear-gradient(rgba(51,51,51,0.8),rgba(51,51,51,0.2)), url(../images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom; /* x y */
+}
+
+.main-quotation { margin: 0 30%; }
+
+.main-quotation p { 
+	font-size: 34px;
+	margin-bottom: 10px;
+}
+
+.main-quotation footer { 
+	text-align: right;
+	font-style: italic;
 }
