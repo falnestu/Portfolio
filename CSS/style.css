@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .text-center { text-align: center; }
 
+
+.img-responsive { width:100%; }
+
+
 /*******************************
 	GRID
 ********************************/
@@ -160,4 +164,86 @@ h4 {
 
 .section .btn-primary:hover {
 	text-decoration: none;
+}
+
+.slider-wrapper { overflow: hidden; }
+
+.slider { width: 800px; }
+
+@media screen and (min-width: 1431px){
+	.slider{ width: 960px; }
+}
+
+@media screen and (max-width: 1430px){
+	.slider{ width: 800px; }
+}
+
+@media screen and (max-width: 1024px){
+	.slider{ width: 400px; }
+}
+
+.slick-dots {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.slick-dots li { 
+	display: inline-block; 
+	margin-right: 5px;
+}
+
+.slick-dots li button{
+	font-size: 0;
+	border: none;
+	background: #6C311E;
+	padding: 5px;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	outline: 0;
+	cursor: pointer;
+}
+
+.slick-dots li.slick-active button{ 
+	background: #FF5722;
+}
+
+.btn-toggle-menu { display: none; }
+
+@media screen and (max-width: 600px){
+	.social-menu { display: none; }
+	.side-menu {
+		height:50px;
+		width:100%;
+	}
+	.logo { 
+		top: 5px;
+		position: relative;
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	.main-menu {
+		transform: none;
+		position:relative;
+		float:left;
+		width:100%;
+		top: 0;
+	}
+	.main-menu ul { display: block; background: white;}
+	.main-content { padding-left:0; }
+
+	.side-menu a { padding: 10px; display: block; }
+	.hide-menu { display: none; }
+	.btn-toggle-menu { 
+		display: block;
+		position: absolute;
+		right: 0;
+		padding: 10px 20px;
+		font-size: 21px;
+		z-index: 1;
+		padding: 
+	}
 }
